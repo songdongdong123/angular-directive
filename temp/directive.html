@@ -1,0 +1,20 @@
+<sective>
+    <div class="header">
+        <button type="" id="btn" ng-click="show()">点击</button>
+        <button ng-click="anmiation()">点击规格</button>
+        <ul class="list">
+            <li ng-repeat="value in data track by $index">{{value.name}}</li>
+        </ul>
+        <div class="mark">
+            <ul>
+                <li ng-repeat="value in data track by $index">{{value.name}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="center" ng-show="name">
+        <button ng-click="hide()">点击返回</button>
+        <ul>
+            <li ng-repeat="value in data track by $index" ng-click="anmiation()">{{value.name}}</li>
+        </ul>
+    </div>
+</sective>
